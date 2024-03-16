@@ -1,6 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
-
+const { colors: defaultColors } = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
@@ -8,8 +8,8 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
-
     theme: {
+        colors: defaultColors,
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],

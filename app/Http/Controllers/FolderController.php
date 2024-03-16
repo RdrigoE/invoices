@@ -12,7 +12,7 @@ class FolderController extends Controller
      */
     public function index()
     {
-        //
+        return view('folders.index', ['groups' => []]);
     }
 
     /**
@@ -20,7 +20,7 @@ class FolderController extends Controller
      */
     public function create()
     {
-        //
+        return view('folders.create');
     }
 
     /**
